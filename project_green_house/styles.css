@@ -115,7 +115,9 @@
   .hero-float .txt{font-size:12.5px;line-height:1.3;}
   .hero-float .txt b{display:block;}
   .hero-float .txt span{color:var(--muted);}
-  @media (max-width:900px){.hero-grid{grid-template-columns:1fr;} .hero-art{order:-1;max-width:420px;margin:0 auto;}}
+  @media (max-width:900px){.hero-grid{grid-template-columns:1fr;} 
+                           .hero-art{order:-1;max-width:420px;margin:0 auto;} 
+                           .hero-float{position:static;margin:14px auto 0;max-width:280px;}} 
 
   /* Pains */
   .pains-section{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
@@ -125,6 +127,12 @@
   .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
   @media (max-width:1023px){.grid-4{grid-template-columns:repeat(2,1fr);}}
   @media (max-width:640px){.grid-4{grid-template-columns:1fr;}}
+  @media (max-width:640px){
+  header{
+    background:var(--bg);
+    backdrop-filter:none;
+  }
+  }
   .pain-card{
     background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:22px 20px;
     display:flex;flex-direction:column;gap:12px;min-height:160px;
