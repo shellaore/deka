@@ -1,15 +1,15 @@
 :root{
-    --green:#149E5A;
-    --accent:#CDEB45;
-    --on-accent:#15231A;
-    --bg:#FBFBF7;
-    --ink:#15231A;
-    --card:#FFFFFF;
-    --muted:#5C6B5F;
-    --line:#E7E5DC;
-    --r:16px;
-    --pad:96px;
-  }
+  --green:#1F8A5B;
+  --accent:#1F8A5B;
+  --on-accent:#FFFFFF;
+  --bg:#F3F5F2;
+  --ink:#14201A;
+  --card:#FFFFFF;
+  --muted:#6A746C;
+  --line:#E4E7E2;
+  --r:16px;
+  --pad:96px;
+}
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
