@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ЗелёныйДом — экологичный быт по подписке</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="#top" class="logo"><span class="mark"></span>ЗелёныйДом</a>
+    <nav class="main-nav">
+      <a href="#catalog">Каталог</a>
+      <a href="#how">Как это работает</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="header-right">
+      <a href="#catalog" class="cart-link">Корзина <span class="cart-badge" id="cartBadge">0</span></a>
+      <a href="#pricing" class="btn btn-accent">Собрать коробку</a>
+    </div>
+  </div>
+</header>
+
+<a id="top"></a>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-badge"><span class="dot"></span>Без пластика · Без химии · с 2021 года</span>
+      <h1>Экологичный быт <span class="accent">без компромиссов</span> — и без лишних хлопот</h1>
+      <p class="lead">Лабораторно проверенный состав без токсичной химии. Доставка по подписке — нужные товары сами появляются дома вовремя.</p>
+      <div class="hero-cta">
+        <a href="#pricing" class="btn btn-accent">Собрать свою коробку</a>
+        <a href="#how" class="btn btn-outline">Как это работает →</a>
+      </div>
+      <div class="hero-proof">
+        <div class="hero-rating">★ 4.9 <small>· 12 000 семей</small></div>
+        <div class="hero-divider"></div>
+        <div class="hero-lab"><span class="check">✓</span>Состав каждой партии проверен независимой лабораторией</div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="hero-img">
+        <div class="hatch"></div>
+        <div class="caption">lifestyle · фото коробки эко-товаров на&nbsp;кухне</div>
+      </div>
+      <div class="hero-float">
+        <span class="lab">Lab</span>
+        <span class="txt"><b>100% без химии</b><span>протокол в каждой коробке</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pains-section">
+  <div class="container sec-pad">
+    <div class="sec-head-row">
+      <div>
+        <span class="eyebrow">Знакомо?</span>
+        <h2>Перейти на экологичный быт хочется. Но каждый раз что-то мешает</h2>
+      </div>
+    </div>
+    <div class="grid-4" id="painsGrid"></div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container sec-pad">
+    <div class="sec-center">
+      <span class="eyebrow">Как это работает</span>
+      <h2>Четыре простых шага — и нужное само приезжает домой</h2>
+    </div>
+    <div class="grid-4" id="stepsGrid"></div>
+  </div>
+</section>
+
+<section class="benefits-section">
+  <div class="container sec-pad">
+    <div class="benefits-grid">
+      <div>
+        <span class="eyebrow">Почему это выгодно</span>
+        <h2>Здоровье семьи и удобство — без переплат</h2>
+        <p class="lead">Мы перевели «экологичность» из обещаний на этикетке в конкретные, проверяемые выгоды.</p>
+      </div>
+      <div class="benefit-list" id="benefitsList"></div>
+    </div>
+  </div>
+</section>
+
+<section id="catalog">
+  <div class="container sec-pad">
+    <div class="sec-head-row" style="margin-bottom:30px;">
+      <div>
+        <span class="eyebrow">Хиты продаж</span>
+        <h2 style="margin-top:12px;">Соберите коробку под себя</h2>
+      </div>
+      <div class="filters" id="filtersRow"></div>
+    </div>
+    <div class="grid-4" id="catalogGrid"></div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing-section">
+  <div class="container sec-pad">
+    <div class="sec-center" style="margin-bottom:34px;">
+      <span class="eyebrow">Тарифы</span>
+      <h2 style="max-width:16em;margin-left:auto;margin-right:auto;">Выберите формат — отменить или изменить можно в любой момент</h2>
+    </div>
+    <div class="size-toggle-row">
+      <div class="size-toggle" id="sizeToggle"></div>
+    </div>
+    <div class="plans-grid" id="plansGrid"></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container sec-pad faq-wrap">
+    <div class="sec-center">
+      <span class="eyebrow">Вопросы и сомнения</span>
+      <h2>Часто задаваемые вопросы</h2>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<div class="final-wrap">
+  <div class="final-box">
+    <div class="final-circle"></div>
+    <div class="final-inner">
+      <span class="eyebrow">Первый шаг</span>
+      <h2>Сделайте первый шаг к экологичному дому уже сегодня</h2>
+      <p class="lead">Лабораторно проверенный состав и доставка по подписке. <b>Скидка 15% на первый заказ</b> по промокоду <b>ZELENO</b>.</p>
+      <div class="final-cta"><a href="#pricing" class="btn">Собрать коробку</a></div>
+      <div class="final-sub" id="finalSub">
+        <div class="final-sub-label">Пока думаете — заберите бесплатный гайд «Как отличить эко от маркетинга»</div>
+        <form class="final-form" id="subscribeForm">
+          <input type="email" id="subscribeEmail" placeholder="Ваш e-mail" required>
+          <button type="submit">Получить гайд</button>
+        </form>
+        <div class="final-thanks"><span class="check">✓</span> Спасибо! Гайд по экологичному быту уже летит на почту.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-logo"><span class="mark"></span>ЗелёныйДом</div>
+    <div class="foot-note">Без пластика. Без химии. С 2021 года. · © 2026 ЗелёныйДом</div>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
