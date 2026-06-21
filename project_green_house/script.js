@@ -26,14 +26,14 @@
     { key:'bath', label:'Для ванной' }, { key:'laundry', label:'Для стирки' }
   ];
   const PRODUCTS = [
-    { id:'p1', name:'Гель для посуды «Цитрус»', cat:'kitchen', price:390, badge:'best', img:'фото · гель' },
-    { id:'p2', name:'Таблетки для посудомойки', cat:'kitchen', price:690, badge:'', img:'фото · таблетки' },
-    { id:'p3', name:'Спрей для ванной комнаты', cat:'bath', price:420, badge:'new', img:'фото · спрей' },
-    { id:'p4', name:'Твёрдое мыло для рук', cat:'bath', price:290, badge:'', img:'фото · мыло' },
-    { id:'p5', name:'Гель для стирки «Без запаха»', cat:'laundry', price:790, badge:'best', img:'фото · гель' },
+    { id:'p1', name:'Гель для посуды «Цитрус»', cat:'kitchen', price:390, badge:'best', img:'gel_for_dish_citrus.png' },
+    { id:'p2', name:'Таблетки для посудомойки', cat:'kitchen', price:690, badge:'', img:'tablets.png' },
+    { id:'p3', name:'Спрей для ванной комнаты', cat:'bath', price:420, badge:'new', img:'spray.png' },
+    { id:'p4', name:'Твёрдое мыло для рук', cat:'bath', price:290, badge:'', img:'soap.png' },
+    { id:'p5', name:'Гель для стирки «Без запаха»', cat:'laundry', price:790, badge:'best', img:'gel_not_smell.png' },
     { id:'p6', name:'Кондиционер для белья', cat:'laundry', price:650, badge:'', img:'фото · флакон' },
-    { id:'p7', name:'Эко-губки, 3 шт', cat:'kitchen', price:240, badge:'', img:'фото · губки' },
-    { id:'p8', name:'Пятновыводитель', cat:'laundry', price:540, badge:'new', img:'фото · пятновыв.' }
+    { id:'p7', name:'Эко-губки, 3 шт', cat:'kitchen', price:240, badge:'', img:'gubki.png' },
+    { id:'p8', name:'Пятновыводитель', cat:'laundry', price:540, badge:'new', img:'pyatnovivod.png' }
   ];
   const SIZES = [
     { key:'mini', label:'Мини', f:0.72 }, { key:'std', label:'Стандарт', f:1 }, { key:'big', label:'Большая', f:1.5 }
@@ -94,8 +94,7 @@
       return `
       <div class="product-card">
         <div class="product-img">
-          <div class="hatch"></div>
-          <div class="caption">${p.img}</div>
+          <img src="images/${p.img}" alt="${p.name} style="width:100%;height:100%;object-fit:cover;">
           ${badge}
         </div>
         <div class="product-body">
